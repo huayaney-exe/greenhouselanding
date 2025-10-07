@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Greenhouse - Building Companies with AI & Tech. Creating from zero or growing existing businesses that have crossed the death valley.">
+  <title>Greenhouse - Building Companies with AI & Tech</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/forest-scroll.css">
+</head>
+<body>
+
+  <!-- Fixed Forest Canvas Background -->
+  <div class="forest-container">
+    <canvas id="forest-canvas"></canvas>
+  </div>
+
+  <!-- Glassmorphic Navigation -->
+  <nav class="main-nav glassmorphic" id="main-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="nav-logo-text">GREENHOUSE</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#manifesto" class="nav-link" data-section="manifesto">Manifesto</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-link dropdown-toggle" data-section="portfolio">
+            Portfolio
+            <span class="dropdown-arrow">▼</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#florece" class="dropdown-link">🌺 Florece.AI</a></li>
+            <li><a href="#genera" class="dropdown-link">📚 Genera</a></li>
+            <li><a href="#vuelve" class="dropdown-link">🌱 Vuelve Compostario</a></li>
+            <li><a href="#next-venture" class="dropdown-link">✨ Join Us</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Scroll Container -->
+  <div class="scroll-container">
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <h1 class="hero-title">GREENHOUSE</h1>
+      <div class="hero-subtitle">Building Companies with AI & Tech</div>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section class="manifesto-section" id="manifesto">
+      <div class="manifesto-content glassmorphic" data-reveal="fade-up">
+        <h2>We Build the Future</h2>
+        <p>
+          Creating from zero or growing existing businesses that have crossed the death valley.
+          <strong>We don't just consult—we build, deploy, and scale</strong> alongside you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Companies -->
+    <section class="portfolio-section" id="portfolio">
+      <h2 class="section-title">Portfolio Companies</h2>
+      <p class="section-subtitle">Discovered clearings in our journey through the forest of innovation</p>
+
+      <div class="portfolio-grid">
+
+        <!-- Florece.AI -->
+        <article id="florece" class="portfolio-card glassmorphic" data-reveal="fade-up">
+          <div class="card-header">
+            <div class="card-logo">🌺</div>
+            <span class="card-stage">Founded by Team</span>
+          </div>
+          <h3>Florece.AI</h3>
+          <p>
+            AI-powered floral design platform with 24/7 virtual assistance for personalized
+            flower arrangements in Lima's market.
+          </p>
+          <div class="card-metrics">
+            <span>🚀 E-commerce Platform</span>
+            <span>🤝 Live & Scaling</span>
+          </div>
+          <a href="https://florece.ai" class="card-link" target="_blank" rel="noopener">
+            Visit Site →
+          </a>
+        </article>
+
+        <!-- Genera -->
+        <article id="genera" class="portfolio-card glassmorphic" data-reveal="fade-up">
+          <div class="card-header">
+            <div class="card-logo">📚</div>
+            <span class="card-stage">Founded by Team</span>
+          </div>
+          <h3>Genera</h3>
+          <p>
+            Educational AI platform for teachers in Peru, automating personalized
+            teaching materials and saving hours of preparation time.
+          </p>
+          <div class="card-metrics">
+            <span>🎓 EdTech Platform</span>
+            <span>🌎 Active Users</span>
+          </div>
+          <a href="https://generaapp.com" class="card-link" target="_blank" rel="noopener">
+            Visit Site →
+          </a>
+        </article>
+
+        <!-- Vuelve Compostario -->
+        <article id="vuelve" class="portfolio-card glassmorphic" data-reveal="fade-up">
+          <div class="card-header">
+            <div class="card-logo">🌱</div>
+            <span class="card-stage">Active Transformation</span>
+          </div>
+          <h3>Vuelve Compostario</h3>
+          <p>
+            Peru's first eco-friendly pet composting service, transforming from local
+            operation to AI-powered scalable platform.
+          </p>
+          <div class="card-metrics">
+            <span>🌿 Pet Care Innovation</span>
+            <span>📈 10x Growth Path</span>
+          </div>
+          <a href="https://vuelvecompostario.com" class="card-link" target="_blank" rel="noopener">
+            Learn More →
+          </a>
+        </article>
+
+        <!-- Next Venture (Placeholder) -->
+        <article id="next-venture" class="portfolio-card glassmorphic portfolio-card-next" data-reveal="fade-up">
+          <div class="card-header">
+            <div class="card-logo">✨</div>
+            <span class="card-stage">Your Company?</span>
+          </div>
+          <h3>The Next Success Story</h3>
+          <p>
+            We're looking for founders with validated business models ready to scale
+            through AI transformation and strategic partnership.
+          </p>
+          <div class="card-metrics">
+            <span>🤝 Equity Partnership</span>
+            <span>🔨 We Build With You</span>
+          </div>
+          <a href="mailto:hello@greenhouseventures.com" class="card-link">
+            Start Conversation →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Greenhouse</h3>
+          <p>Building Companies with AI & Tech</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@greenhouseventures.com">hello@greenhouseventures.com</a>
+          <span class="footer-separator">|</span>
+          <a href="https://linkedin.com/company/greenhouse-ventures" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-locations">
+          <span>🇵🇪 Lima, Peru</span>
+          <span class="footer-separator">•</span>
+          <span>🇨🇱 Santiago, Chile</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Forest Scroller -->
+  <script src="assets/js/forest-scroller.js"></script>
+
+  <!-- Forest Ambient Effects -->
+  <script src="assets/js/forest-ambient.js"></script>
+
+  <!-- Initialize -->
+  <script>
+    // Configuration
+    const FOREST_CONFIG = {
+      // Visual
+      fogDensity: 0.7,
+      lightRayOpacity: 0.3,
+
+      // Performance
+      frameRate: 30,
+      imageQuality: 0.8,
+      mobileFrameCount: 60,
+
+      // Scroll behavior
+      scrollSmoothing: 0.1,
+      parallaxIntensity: 1.5,
+
+      // Glassmorphism
+      glassOpacity: 0.25,
+      blurIntensity: 12,
+      borderOpacity: 0.15
+    };
+
+    // Initialize on DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+
+    function init() {
+      console.log('🌲 Greenhouse: Initializing...');
+
+      // Check if frames are available
+      const testImg = new Image();
+      testImg.src = 'assets/images/forest-sequence/frame-001.webp';
+
+      testImg.onload = () => {
+        // Initialize forest scroller
+        window.forestScroller = new ForestScroller({
+          canvasId: 'forest-canvas',
+          imagePath: 'assets/images/forest-sequence/',
+          totalFrames: 127,
+          smoothing: FOREST_CONFIG.scrollSmoothing,
+          onReady: () => {
+            console.log('✅ Forest journey ready');
+            document.body.classList.add('forest-ready');
+          },
+          onProgress: (progress, loaded, total) => {
+            console.log(`📦 Loading frames: ${loaded}/${total} (${Math.round(progress)}%)`);
+          },
+          onError: (error) => {
+            console.error('❌ Forest scroller error:', error);
+            document.body.classList.add('fallback-mode');
+          }
+        });
+
+        // Initialize ambient effects with golden sparkles (highly visible)
+        window.forestAmbient = new ForestAmbient({
+          particleCount: 60,
+          sparkleCount: 50,
+          particleSpeed: 0.5,
+          fogIntensity: 0.25,
+          vignetteIntensity: 0.35,
+          lightRays: true,
+          soundEnabled: false
+        });
+
+        // Update ambient effects based on scroll
+        let lastUpdate = 0;
+        window.addEventListener('scroll', () => {
+          const now = Date.now();
+          if (now - lastUpdate > 50 && window.forestScroller) { // Throttle updates
+            const progress = window.forestScroller.getProgress();
+            window.forestAmbient.updateProgress(progress);
+            lastUpdate = now;
+          }
+        }, { passive: true });
+      };
+
+      testImg.onerror = () => {
+        console.warn('⚠️  Forest frames not found. Using fallback gradient.');
+        document.body.classList.add('fallback-mode');
+      };
+
+      // Initialize navigation
+      initNavigation();
+
+      // Initialize GSAP animations
+      initScrollAnimations();
+    }
+
+    function initNavigation() {
+      const nav = document.getElementById('main-nav');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section, footer');
+
+      // Smooth scroll on nav click
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+
+            // Update active state
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Update active nav link on scroll
+      const observerOptions = {
+        root: null,
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              const linkSection = link.getAttribute('data-section');
+              if (linkSection === sectionId) {
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => observer.observe(section));
+
+      // Add scrolled class to nav on scroll
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+        lastScroll = currentScroll;
+      }, { passive: true });
+
+      // Dropdown toggle functionality
+      const dropdownToggle = document.querySelector('.dropdown-toggle');
+      const navDropdown = document.querySelector('.nav-dropdown');
+
+      if (dropdownToggle && navDropdown) {
+        dropdownToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          navDropdown.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!navDropdown.contains(e.target)) {
+            navDropdown.classList.remove('active');
+          }
+        });
+
+        // Close dropdown when clicking a dropdown link
+        const dropdownLinks = document.querySelectorAll('.dropdown-link');
+        dropdownLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navDropdown.classList.remove('active');
+          });
+        });
+      }
+    }
+
+    function initScrollAnimations() {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+        console.warn('⚠️  GSAP not loaded. Using CSS-only animations.');
+        return;
+      }
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Hero fade in
+      gsap.from('.hero-section', {
+        opacity: 0,
+        y: 30,
+        duration: 1.5,
+        ease: 'power3.out',
+        delay: 0.5
+      });
+
+      // Manifesto reveal - IMMEDIATE VISIBILITY
+      gsap.to('.manifesto-content', {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.01,
+        immediateRender: true
+      });
+
+      gsap.from('.manifesto-content', {
+        opacity: 0,
+        y: 60,
+        scale: 0.95,
+        duration: 1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.manifesto-section',
+          start: 'top 80%',
+          toggleActions: 'play none none none'
+        }
+      });
+
+      // Portfolio cards staggered reveal - ENSURE VISIBILITY
+      const cards = gsap.utils.toArray('.portfolio-card');
+
+      // First make all cards visible immediately
+      gsap.set(cards, { opacity: 1, y: 0 });
+
+      // Then animate them in
+      cards.forEach((card, i) => {
+        gsap.from(card, {
+          opacity: 0,
+          y: 80,
+          duration: 1,
+          ease: 'power3.out',
+          delay: i * 0.15,
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 90%',
+            toggleActions: 'play none none none'
+          }
+        });
+      });
+
+      // Section title reveal
+      gsap.from('.section-title, .section-subtitle', {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.portfolio-section',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        }
+      });
+
+      console.log('✅ GSAP animations initialized');
+    }
+  </script>
+</body>
+</html>
