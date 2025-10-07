@@ -158,11 +158,15 @@ html {
 
 .hero-section,
 .manifesto-section,
-.portfolio-section,
-.footer {
+.portfolio-section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   min-height: 100vh;
+}
+
+.footer {
+  scroll-snap-align: start;
+  /* Remove min-height to prevent excessive spacing */
 }
 
 /* ==========================================
@@ -547,8 +551,8 @@ html {
    ========================================== */
 
 .footer {
-  padding: var(--space-3xl) var(--space-lg);
-  margin-top: var(--space-3xl);
+  padding: var(--space-2xl) var(--space-lg);
+  margin-top: 0;
 }
 
 .footer-content {
@@ -779,19 +783,30 @@ button:focus-visible {
   position: relative;
 }
 
-/* Style button to look like nav link */
+/* Style button to look exactly like nav link */
 .dropdown-toggle {
+  position: relative;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  font-size: 0.938rem;
+  letter-spacing: 0.02em;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   background: none;
   border: none;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 0;
   font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
+}
+
+.dropdown-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .dropdown-toggle:focus {

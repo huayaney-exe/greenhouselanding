@@ -396,7 +396,8 @@ class ForestScroller {
     const img1 = this.images[frameIndex1];
     const img2 = this.images[frameIndex2];
 
-    if (!img1) return;
+    // Only draw if first frame is fully loaded AND complete
+    if (!img1 || !img1.complete || !img1.naturalWidth) return;
 
     const canvasWidth = this.canvas.clientWidth;
     const canvasHeight = this.canvas.clientHeight;
@@ -411,8 +412,8 @@ class ForestScroller {
     this.ctx.globalAlpha = 1;
     this.ctx.drawImage(img1, dimensions.offsetX, dimensions.offsetY, dimensions.drawWidth, dimensions.drawHeight);
 
-    // Blend second frame if different and loaded
-    if (img2 && frameIndex1 !== frameIndex2 && blendFactor > 0.01) {
+    // Blend second frame ONLY if different, loaded, AND complete
+    if (img2 && frameIndex1 !== frameIndex2 && blendFactor > 0.01 && img2.complete && img2.naturalWidth) {
       this.ctx.globalAlpha = blendFactor;
       this.ctx.drawImage(img2, dimensions.offsetX, dimensions.offsetY, dimensions.drawWidth, dimensions.drawHeight);
     }
